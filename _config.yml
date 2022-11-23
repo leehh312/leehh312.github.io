@@ -50,7 +50,7 @@ author:
 # AdD LINks to the sidebar.
 menu:
   - title:             Category
-    url:               /example/
+    url:               /category/
   - title:             Documentation
     url:               /docs/
   - title:             About
