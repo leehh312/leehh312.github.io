@@ -48,7 +48,7 @@ author:
   # twitter:             <username>
 
 # AdD LINks to the sidebar.
-meNU:
+menu:
   - title:             Category
     url:               /example/
   - title:             Documentation
