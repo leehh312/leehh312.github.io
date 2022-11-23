@@ -11,9 +11,9 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 There should be whitespace between paragraphs.
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be **bold**, _italic_, or ~~strikethrough~~
 
-[Link to another page](another-page).
+[참고자료](https://www.itworld.co.kr/main/).
 
 * toc
 {:toc .large-only}

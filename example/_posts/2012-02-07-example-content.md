@@ -88,7 +88,7 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![800x400](https://via.placeholder.com/800x400 "Large example image")
+![800x400](/resources/static/img/800x400.png "Large example image")
 
 ![400x200](https://via.placeholder.com/400x200 "Medium example image")
 
