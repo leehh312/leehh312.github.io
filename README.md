@@ -1,2 +1,2 @@
-# hoya.github.io
+# leehh312.github.io
 필자가 실무에서 경험하면서 배운부분들을 기록하기 위하여 생성한 블로그
