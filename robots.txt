@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://leehh312.github.io/sitemap.xml
+Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
