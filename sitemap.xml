@@ -22,7 +22,7 @@ layout: null
 		{% endif %}
 
 		{% if post.sitemap.priority == null %}
-		<priority>0.8</priority>
+		<priority>1.0</priority>
 		{% else %}
 		<priority>{{ post.sitemap.priority }}</priority>
 		{% endif %}
