@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 
 title: Hoya Blog                          # the main title
 
-tagline: Server Developer  # it will display as the sub-title
+tagline: Server Developer   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
@@ -38,9 +38,11 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Hyunho Lee
-  email: leehh312@gmail.com             # change to your email address
+  name: your_full_name
+  email: example@domain.com             # change to your email address
   links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/leehh312       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
