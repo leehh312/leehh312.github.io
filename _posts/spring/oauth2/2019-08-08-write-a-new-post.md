@@ -2,8 +2,14 @@
 title: Writing a New Post
 author: cotes
 date: 2019-08-08 14:10:00 +0800
-categories: [Blogging, Tutorial]
-tags: [writing]
+categories: [spring, oauth2]
+tags: [java, spring, oauth2]
+toc: true
+toc_sticky: true
+toc_label: 목차
+math: true
+mermaid: true
+pin: true
 render_with_liquid: false
 ---
 

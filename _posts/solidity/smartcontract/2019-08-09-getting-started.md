@@ -2,9 +2,15 @@
 title: Getting Started
 author: cotes
 date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
-tags: [getting started]
+categories: [solidity, smartcontract]
+tags: [blockchain, ethereum, solidity, smartcontract]
+toc: true
+toc_sticky: true
+toc_label: 목차
+math: true
+mermaid: true
 pin: true
+render_with_liquid: false
 ---
 
 ## Prerequisites

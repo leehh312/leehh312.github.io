@@ -1,16 +1,20 @@
 ---
-title: Text and Typography
+title: 테스트 페이지
 author: cotes
-date: 2019-08-08 11:33:00 +0800
-categories: [Blogging, Demo]
-tags: [typography]
+categories: [go, ethereum]
+tags: [go, golang, ethereum]
+toc: true
+toc_sticky: true
+toc_label: 목차
 math: true
 mermaid: true
-image:
-  path: /commons/devices-mockup.png
-  width: 800
-  height: 500
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+pin: true
+render_with_liquid: false
+# image:
+#   path: /commons/devices-mockup.png
+#   width: 800
+#   height: 500
+#   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
 This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
