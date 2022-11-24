@@ -22,7 +22,7 @@ timezone: Asia/Seoul
 
 title: Hoya Blog                          # the main title
 
-tagline: Server Developer   # it will display as the sub-title
+tagline: Server Developer.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
