@@ -11,7 +11,7 @@ baseurl: ''
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: ko
+lang: en
 
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
@@ -22,10 +22,10 @@ timezone: Asia/Seoul
 
 title: Hoya Blog                          # the main title
 
-tagline: Server Developer   # it will display as the sub-title
+tagline: 안녕하세요. 경험하고 알고 있는 것들을 기록할 예정입니다.
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  개발자로서 새롭게 알게된 것이나, 중요한 개념이거나, 잊어버리고 있는 많은 것을 기록해 보려 합니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://leehh312.github.io'
@@ -72,14 +72,14 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode: dark # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 'https://demo-img.cotes.page'
+img_cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 avatar: '/assets/img/avatar.jpg'
