@@ -17,7 +17,6 @@ render_with_liquid: false
 
 <span style="color: #FF4848">Hecate Connector API는 클라이언트 또는 써드파티에서 RESTFUL API로 자원 요청하게 되면 Hecate Connector API에서는 데이터 핸들링하여 대신 블록체인과 통신하는 서버이다. 이번 블로그에서는 제외하고 구성할 예정이다.</span>
 
-</br>
 
 ## 시스템 요구사항
 <span style="color: #FF4848">도커로 구성할 예정</span>
@@ -29,7 +28,6 @@ OS
 * 메모리 크기 6GB
 * 최소 20GB의 하드디스크
 
-</br>
 
 ## 하이퍼레저 베수 개념 및 옵션 정리
 하이퍼레저 베수란?
@@ -41,8 +39,6 @@ OS
 IBFT란?
 * 이스탄불 [**비잔틴 장애 허용**](http://wiki.hash.kr/index.php/%EB%B9%84%EC%9E%94%ED%8B%B4_%EC%9E%A5%EC%95%A0_%ED%97%88%EC%9A%A9) 매커니즘의 줄임말
 * 시스템이 멈추거나 에러 메시지를 내보내는 장애 뿐만 아니라, 잘못된 값을 다른 시스템에 전달하는 등의 좀 더 원인을 파악하기 어려운 장애들 까지 포함한 말이며, 비잔티움 장애 허용이 구현된 시스템은 미리 정해진 정도를 넘지않는 부분에서 어떠한 현태의 장애가 있더라도 정확한 값을 전달할 수 있는 시스템
-
-</br>
 
 ## 하이퍼레저 베수 구축하기 위한 서버 환경 구성
 전제 조건
@@ -106,8 +102,7 @@ dpkg-reconfigure locales
 ```console
 echo export LANGUAGE=ko_KR.UTF-8 export LANG=ko_KR.UTF-8 >> ~/.bashrc && source ~/.bashrc
 ```
-</br>
 
-## Reference
+## 참고자료
 
-[^ga-filters]: [Hyperledger Besu Ethereum Client 공식 사이트](https://besu.hyperledger.org/en/stable/)
+[Hyperledger Besu Ethereum Client 공식 사이트](https://besu.hyperledger.org/en/stable/).
