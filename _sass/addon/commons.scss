@@ -447,6 +447,10 @@ img[data-src] {
   margin-top: 2rem;
   overflow-wrap: break-word;
 
+  p {
+    color: rgba(200, 196, 196, 0.8);
+  }
+
   a {
     &:not(.img-link) {
       @extend %link-underline;
