@@ -70,7 +70,7 @@ apt-get update && apt-get upgrade
 ```
 하이퍼레저 베수 구성에 필요한 툴 설치
 ```console
-apt-get install vim unzip curl
+apt-get install vim unzip wget
 ```
 
 JDK 11 설치
