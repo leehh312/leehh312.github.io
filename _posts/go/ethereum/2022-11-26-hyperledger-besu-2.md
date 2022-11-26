@@ -53,12 +53,12 @@ echo '{
 ```console
 besu operator generate-blockchain-config --config-file=config.json --to=keyPairs --private-key-file-name=key
 ```
-:heavy_exclamation_mark: <span style="color: #FF4848">에러는 무시해도 된다 현재 노드 키쌍만 생성하는 명령어가 존재하지않아 이러한 방법으로 키쌍 생성 진행하였음.</span>
+<span style="color: #FF4848">에러는 무시해도 된다 현재 노드 키쌍만 생성하는 명령어가 존재하지않아 이러한 방법으로 키쌍 생성 진행하였음.</span>
 !["키쌍생성"](/assets/img/blockchain/%ED%82%A4%EC%8C%8D%EC%83%9D%EC%84%B1.png)
 
 **키쌍 각 노드에 배치**
-> :point_down: 아래의 이미지와 같이 최종적으로 작업 진행하면 된다.
 
+<span style="color: #FF4848">아래의 이미지와 같이 최종적으로 작업 진행하면 된다.</span>
 !["키쌍생성결과"](/assets/img/blockchain/%ED%82%A4%EC%8C%8D%EC%83%9D%EC%84%B1%EA%B2%B0%EA%B3%BC.png)
 
 **각 노드 계정(Address) 파일 생성**
@@ -83,15 +83,17 @@ jq --null-input \
 ```
 
 **Extra Data RLP 인코딩**
-이더리움 네트워크에서 노드에 데이터 구조를 저장하거나, 혹은 노드끼리 데이터 구조를 주고 받으려면 통일된 형식이 필요하며, 이더리움에서는 RLP 인코딩 방식을 선택한것이다.[^rlp]:
-:heavy_exclamation_mark: <span style="color: #FF4848">출력된 RLP인코딩 값 가지고 있다 제네시스에 설정해야함.</span>
+이더리움 네트워크에서 노드에 데이터 구조를 저장하거나, 혹은 노드끼리 데이터 구조를 주고 받으려면 통일된 형식이 필요하며, 이더리움에서는 RLP 인코딩 방식을 선택한것이다.[^rlp]
+
+<span style="color: #FF4848">출력된 RLP인코딩 값 가지고 있다 제네시스에 설정해야함.</span>
 ```console
 besu rlp encode --from=extra_config.json --type=QBFT_EXTRA_DATA
 ```
 
 **제네시스 파일 구성**
-블록체인의 첫 번째 블록을 제네시스 블록이라고 하며, 제네시스 파일은 블록체인 자체에 대한 규칙뿐만 아니라 블록체인의 첫 번째 블록에 있는 데이터를 정의한다. 또 프라이빗이나 퍼블릭 상관없이 새로운 노드가 참가하게 되면 이 제네시스 블록이 새로 생성된다.[^genesis-file]:
-:heavy_exclamation_mark: <span style="color: #FF4848">alloc필드 내부에 있는 속성들 수정 진행 해야하며, 앞에서 생성한 계정 및 개인키에 보면 prefix로 0x가 붙어있는데 제거해서 수정 진행 </span>
+블록체인의 첫 번째 블록을 제네시스 블록이라고 하며, 제네시스 파일은 블록체인 자체에 대한 규칙뿐만 아니라 블록체인의 첫 번째 블록에 있는 데이터를 정의한다. 또 프라이빗이나 퍼블릭 상관없이 새로운 노드가 참가하게 되면 이 제네시스 블록이 새로 생성된다.[^genesis-file]
+
+<span style="color: #FF4848">alloc필드 내부에 있는 속성들 수정 진행 해야하며, 앞에서 생성한 계정 및 개인키에 보면 prefix로 0x가 붙어있는데 제거해서 수정 진행 </span>
 
 ```json
 {
