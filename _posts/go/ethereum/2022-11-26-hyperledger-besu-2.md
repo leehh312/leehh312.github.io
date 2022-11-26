@@ -85,7 +85,7 @@ jq --null-input \
 **Extra Data RLP 인코딩**
 이더리움 네트워크에서 노드에 데이터 구조를 저장하거나, 혹은 노드끼리 데이터 구조를 주고 받으려면 통일된 형식이 필요하며, 이더리움에서는 RLP 인코딩 방식을 선택한것이다.[^rlp]
 
-<span style="color: #FF4848">출력된 RLP인코딩 값 가지고 있다 제네시스에 설정해야함.</span>
+<span style="color: #FF4848">출력된 RLP인코딩 값 가지고 있다 제네시스에 설정해야한다.</span>
 ```console
 besu rlp encode --from=extra_config.json --type=QBFT_EXTRA_DATA
 ```
