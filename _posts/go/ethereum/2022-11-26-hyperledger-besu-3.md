@@ -112,7 +112,7 @@ export BESU_MINER_COINBASE=11549197c99e4b886ed7d6ed2843f534a4f367fc
 
 이제 블록체인 구동에 필요한 설정은 다 끝났다. 하이퍼레저 베수(이더리움 기반) 구축(4)에서 도커를 이용하여 4개의 노드를 구동해볼 것 이다.
 최종 디렉토리 구조는 아래와 같이 나와야한다.
-!["최종디렉토리구조"](/assets/img/blockchain/%EC%B5%9C%EC%A2%85%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EA%B5%AC%EC%A1%B0.pngㄴ)
+!["최종디렉토리구조"](/assets/img/blockchain/%EC%B5%9C%EC%A2%85%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EA%B5%AC%EC%A1%B0.png)
 
 
 ## 참조
