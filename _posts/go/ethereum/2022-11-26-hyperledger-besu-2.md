@@ -91,6 +91,9 @@ besu rlp encode --from=extra_config.json --type=QBFT_EXTRA_DATA
 ```
 
 **제네시스 파일 구성**
+```
+vi /QBFT-Network/genesis.json
+```
 블록체인의 첫 번째 블록을 제네시스 블록이라고 하며, 제네시스 파일은 블록체인 자체에 대한 규칙뿐만 아니라 블록체인의 첫 번째 블록에 있는 데이터를 정의한다. 또 프라이빗이나 퍼블릭 상관없이 새로운 노드가 참가하게 되면 이 제네시스 블록이 새로 생성된다.[^genesis-file]
 
 <span style="color: #FF4848">alloc필드 내부에 있는 속성들 수정 진행 해야하며, 앞에서 생성한 계정 및 개인키에 보면 prefix로 0x가 붙어있는데 제거해서 수정 진행 </span>
