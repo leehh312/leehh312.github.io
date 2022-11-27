@@ -23,6 +23,7 @@ besu --data-path=/QBFT-Network/Node-2/data --genesis-file=/QBFT-Network/genesis.
 ![부트노드](/assets/img/blockchain/%EB%B6%80%ED%8A%B8%EB%85%B8%EB%93%9C1.png)
 
 **블록체인 옵션 리스트 및 설정값**[^option]
+
 옵션 | 설명
 ---- | ----
 BESU_IDENTITY | 노드의 이름. 지정된 경우 일부 Ethereum 네트워크 탐색기에서 제공하는 클라이언트ID의 두 번째 섹션
