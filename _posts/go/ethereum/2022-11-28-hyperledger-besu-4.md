@@ -159,4 +159,4 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qbft_getValidatorsByBlockNumber"
 ```
 ![curl테스트](/assets/img/blockchain/curl%ED%85%8C%EC%8A%A4%ED%8A%B8.png)
 
-원래는 [시스템 아키텍처](https://leehh312.github.io/posts/hyperledger-besu-1/)대로 구성하려고 했으나 기본적인 노드4개만 구성하고 해당 컨텐츠는 마칠려고 한다. 나머지들은 블록체인 문서를 보게되면 쉽게 플러그 또는 기능들을 추가할 수 있고, 무엇보다도..다른 것들을 작성하고 싶어서 여기서 마칠려고 한다. 구성 해보고 안되거나 궁금한 부분 답글로 달아주시면 답하도록 하겠습니다.
+원래는 [시스템 아키텍처](https://leehh312.github.io/posts/hyperledger-besu-1/)대로 구성하려고 했으나 기본적인 노드4개만 구성하고 해당 컨텐츠는 끝내려고 한다. 나머지들은 블록체인 문서를 보면 쉽게 플러그 또는 기능들을 추가할 수 있고, 무엇보다도..다른 컨텐츠도 작성하고 싶어서 여기서 끝내려고 한다. 구성해보고 안되거나 궁금한 부분 답글로 달아주시면 답하도록 하겠습니다.
