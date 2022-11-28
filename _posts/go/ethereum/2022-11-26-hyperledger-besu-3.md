@@ -74,14 +74,14 @@ export BESU_GENESIS_FILE=/QBFT-Network/genesis.json
 
 # 위에서 로그에 찍혔던 부트노드값들 여기에 설정 !!
 # 127.0.0.1 -> dns값인 peer1 또는 peer2로 설정
-export BESU_BOOTNODES=enode://af3697380bce736e3c4ad3e6be5ea572cce89c494f95ab057dc90afb41d93234e8104029b24e2b5ac40ffae6253381903d8cd53787190a28dd76f58b9a689c9f@peer1:30303,enode://bd2dcdac0a017e7189aaee61ad8d10266394a7757dad2ebba10fd29c8bbd9a07ad83c3ecc848d0128f240e55d10acfa6d7d948f0c94dcb1cdc7a6d63b76032af@peer2:30304
+export BESU_BOOTNODES=enode://af3697380bce736e3c4ad3e6be5ea572cce89c494f95ab057dc90afb41d93234e8104029b24e2b5ac40ffae6253381903d8cd53787190a28dd76f58b9a689c9f@node1:30303,enode://bd2dcdac0a017e7189aaee61ad8d10266394a7757dad2ebba10fd29c8bbd9a07ad83c3ecc848d0128f240e55d10acfa6d7d948f0c94dcb1cdc7a6d63b76032af@node2:30304
 
 export BESU_RPC_HTTP_ENABLED=true
 
 export BESU_RPC_HTTP_HOST=0.0.0.0
 
 # 노드1 8545, 노드2 8546, 노드3 8547, 노드4 8548
-export BESU_RPC_HTTP_PORT=${HOYA_HTTP}
+export BESU_RPC_HTTP_PORT=${HOYA_HTTP_PORT}
 
 export BESU_RPC_HTTP_API=ETH,QBFT,NET,WEB3
 
@@ -110,10 +110,24 @@ export BESU_MINER_ENABLED=true
 export BESU_MINER_COINBASE=11549197c99e4b886ed7d6ed2843f534a4f367fc
 ```
 
+**entrypoint 파일 생성**
+```console
+cd / && vi entrypoint.sh
+```
+```bash
+#!/bin/bash
+set -e
+
+source /QBFT-Network/core/node-core
+/usr/local/bin/besu-22.10.0/bin/besu --Xdns-enabled=true --Xdns-update-enabled=true
+
+exec "$@"
+```
+
 이제 블록체인 구동에 필요한 설정은 다 끝났다. 하이퍼레저 베수(이더리움 기반) 구축(4)에서 도커를 이용하여 4개의 노드를 구동해볼 것 이다.
-최종 디렉토리 구조는 아래와 같이 나와야한다.
+**최종 디렉토리 구조**는 아래와 같이 나와야한다.
 !["최종디렉토리구조"](/assets/img/blockchain/%EC%B5%9C%EC%A2%85%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EA%B5%AC%EC%A1%B0.png)
 
 
 ## 참조
-[^option]: [하이퍼레저 베수 옵션](HOYA_P2P_PORT)
+[^option]: [하이퍼레저 베수 옵션](https://besu.hyperledger.org/en/stable/public-networks/reference/cli/options/)
