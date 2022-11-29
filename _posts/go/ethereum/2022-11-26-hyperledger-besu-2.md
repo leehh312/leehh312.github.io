@@ -143,9 +143,8 @@ vi /QBFT-Network/genesis.json
   },
   "extraData" : "0xf87aa00000000000000000000000000000000000000000000000000000000000000000f8549411549197c99e4b886ed7d6ed2843f534a4f367fc9466283b796406855fcb763d60742e922c0143deef94b7bb70ad693cc227d45507d5579a7077caa5f42694edad1970f705d11f59130b29d76c37332772e24cc080c0"
 }
-```
+```  
 
-## 참조
-[^rlp]: [RLP 개념 및 원리](https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/)
-
-[^genesis-file]: [제네시스 파일 옵션 및 개념](https://besu.hyperledger.org/en/stable/public-networks/concepts/genesis-file/)
+## 참조  
+[^rlp]: [RLP 개념 및 원리](https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/)  
+[^genesis-file]: [제네시스 파일 옵션 및 개념](https://besu.hyperledger.org/en/stable/public-networks/concepts/genesis-file/)  

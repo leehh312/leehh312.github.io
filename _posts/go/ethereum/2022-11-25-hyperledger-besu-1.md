@@ -102,8 +102,7 @@ dpkg-reconfigure locales
 **패키지 환경설정**
 ```console
 echo export LANGUAGE=ko_KR.UTF-8 export LANG=ko_KR.UTF-8 >> ~/.bashrc && source ~/.bashrc
-```
+```  
 
-## 참고자료
-
-[Hyperledger Besu Ethereum Client 공식 사이트](https://besu.hyperledger.org/en/stable/).
+## 참고자료  
+[Hyperledger Besu Ethereum Client 공식 사이트](https://besu.hyperledger.org/en/stable/).  
