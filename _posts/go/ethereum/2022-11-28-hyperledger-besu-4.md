@@ -153,7 +153,7 @@ docker logs -f {node1~node4}
 ```
 ![블록체인정상구동](/assets/img/blockchain/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EC%A0%95%EC%83%81%EA%B5%AC%EB%8F%99.png)
 
-**정상적으로 노드4로 구성된 블록체인 떴는지 요청해보기**
+**정상적으로 블록체인 구성되었는지 요청해보기**
 ```console
 curl -X POST --data '{"jsonrpc":"2.0","method":"qbft_getValidatorsByBlockNumber","params":["latest"], "id":1}' localhost:8545
 ```
