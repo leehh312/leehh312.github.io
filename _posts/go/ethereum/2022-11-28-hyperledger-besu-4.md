@@ -1,8 +1,8 @@
 ---
-title: 하이퍼레저 베수(이더리움 기반) 구축(4)
+title: 하이퍼레저 비수(이더리움 기반) 구축(4)
 author: cotes
 categories: [blockchain, ethereum]
-tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저베수, 이더리움]
+tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저비수, 이더리움]
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -12,7 +12,7 @@ pin: true
 render_with_liquid: false
 ---
 
-## QBFT 네트워크 기반 하이퍼레저 베수 구축
+## QBFT 네트워크 기반 하이퍼레저 비수 구축
 **작업영역 생성**
 ```console
 mkdir besu && cd besu && mkdir info

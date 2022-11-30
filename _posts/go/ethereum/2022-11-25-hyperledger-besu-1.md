@@ -1,8 +1,8 @@
 ---
-title: 하이퍼레저 베수(이더리움 기반) 구축(1)
+title: 하이퍼레저 비수(이더리움 기반) 구축(1)
 author: cotes
 categories: [blockchain, ethereum]
-tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저베수, 이더리움]
+tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저비수, 이더리움]
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -29,9 +29,9 @@ render_with_liquid: false
 * 최소 20GB의 하드디스크
 
 
-## 하이퍼레저 베수 기본 개념 간단하게 정리
-**하이퍼레저 베수란?**
-* 하이퍼레저 베수는 아파치2.0 라이선스에 따라서 개발되었으며, 자바로 작성된 오픈소스 이더리움 클라이언트이다. 베수는 사설 네트워크에서 안전하며 고성능 트랜잭션 처리가 가능한 엔터프라이즈 앱에 개발하기 좋은 오픈소스이다.
+## 하이퍼레저 비수 기본 개념 간단하게 정리
+**하이퍼레저 비수란?**
+* 하이퍼레저 비수는 아파치2.0 라이선스에 따라서 개발되었으며, 자바로 작성된 오픈소스 이더리움 클라이언트이다. 비수는 사설 네트워크에서 안전하며 고성능 트랜잭션 처리가 가능한 엔터프라이즈 앱에 개발하기 좋은 오픈소스이다.
 
 **합의 알고리즘**
 * Pow(Ethash) : 마이닝 증명으로 블록생성, 보상 개념의 알고리즘(비트코인, 이더리움)
@@ -41,7 +41,7 @@ render_with_liquid: false
 * 이스탄불 [**비잔틴 장애 허용**](http://wiki.hash.kr/index.php/%EB%B9%84%EC%9E%94%ED%8B%B4_%EC%9E%A5%EC%95%A0_%ED%97%88%EC%9A%A9) 매커니즘의 줄임말
 * 시스템이 멈추거나 에러 메시지를 내보내는 장애 뿐만 아니라, 잘못된 값을 다른 시스템에 전달하는 등의 좀 더 원인을 파악하기 어려운 장애들 까지 포함한 말이며, 비잔티움 장애 허용이 구현된 시스템은 미리 정해진 정도를 넘지않는 부분에서 어떠한 현태의 장애가 있더라도 정확한 값을 전달할 수 있는 시스템
 
-## 하이퍼레저 베수 구축하기 위한 서버 환경 구성
+## 하이퍼레저 비수 구축하기 위한 서버 환경 구성
 **전제 조건**
 * docker 및 docker-compose
 
@@ -69,7 +69,7 @@ docker exec -it ms_peer /bin/bash
 ```console
 apt-get update && apt-get upgrade
 ```
-**하이퍼레저 베수 구성에 필요한 툴 설치**
+**하이퍼레저 비수 구성에 필요한 툴 설치**
 ```console
 apt-get install vim unzip wget jq -y
 ```

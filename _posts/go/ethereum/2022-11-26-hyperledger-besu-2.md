@@ -1,8 +1,8 @@
 ---
-title: 하이퍼레저 베수(이더리움 기반) 구축(2)
+title: 하이퍼레저 비수(이더리움 기반) 구축(2)
 author: cotes
 categories: [blockchain, ethereum]
-tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저베수, 이더리움]
+tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저비수, 이더리움]
 toc: true
 toc_sticky: true
 toc_label: 목차
@@ -12,8 +12,8 @@ pin: true
 render_with_liquid: false
 ---
 
-## QBFT 네트워크 기반 하이퍼레저 베수 구축
-**하이퍼레저 베수 설치**
+## QBFT 네트워크 기반 하이퍼레저 비수 구축
+**하이퍼레저 비수 설치**
 ```console
 cd /usr/local/bin && wget https://hyperledger.jfrog.io/hyperledger/besu-binaries/besu/22.10.0/besu-22.10.0.tar.gz
 ```
@@ -23,19 +23,19 @@ cd /usr/local/bin && wget https://hyperledger.jfrog.io/hyperledger/besu-binaries
 tar -zxvf besu-22.10.0.tar.gz
 ```
 
-**하이퍼레저 베수 환경설정**
+**하이퍼레저 비수 환경설정**
 ```console
 echo export PATH=${PATH}:/usr/local/bin/besu-22.10.0/bin >> ~/.bashrc && source ~/.bashrc
 ```
 
 **정상 설치 확인**
-!["베수 정상 설치 확인"](/assets/img/blockchain/%EB%B2%A0%EC%88%98%EC%84%A4%EC%B9%98%EC%A0%95%EC%83%81%ED%99%95%EC%9D%B8.png)
+!["비수 정상 설치 확인"](/assets/img/blockchain/%EB%B2%A0%EC%88%98%EC%84%A4%EC%B9%98%EC%A0%95%EC%83%81%ED%99%95%EC%9D%B8.png)
 
 **디렉토리 구성**
 ```console
 mkdir -p /QBFT-Network/{Node-1,Node-2,Node-3,Node-4}/data && cd /QBFT-Network
 ```
-!["베수 디렉토리 구성"](/assets/img/blockchain/%EB%B2%A0%EC%88%98%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EA%B5%AC%EC%84%B1.png)
+!["비수 디렉토리 구성"](/assets/img/blockchain/%EB%B2%A0%EC%88%98%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC%EA%B5%AC%EC%84%B1.png)
 
 **노드 키쌍 생성**
 ```console
