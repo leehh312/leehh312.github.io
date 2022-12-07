@@ -2,7 +2,7 @@
 title: 하이퍼레저 비수(이더리움 기반) 구축(1)
 author: cotes
 categories: [blockchain, ethereum]
-tags: [blockchain, hyperledger besu, ethereum, 블록체인, 하이퍼레저비수, 이더리움]
+tags: [blockchain, hyperledger besu, ethereum]
 toc: true
 toc_sticky: true
 toc_label: 목차
