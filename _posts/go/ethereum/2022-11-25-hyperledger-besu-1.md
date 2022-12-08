@@ -15,8 +15,6 @@ render_with_liquid: false
 ## 시스템 아키텍처
 !["hyperledger besu system architecture"](/assets/img/blockchain/hyperledger_besu_architecture.png)
 
-<span style="color: #FF4848">Hecate Connector API는 클라이언트 또는 써드파티에서 RESTFUL API로 자원 요청하게 되면 Hecate Connector API에서는 데이터 핸들링하여 대신 블록체인과 통신하는 서버이다. 이번 블로그에서는 제외하고 구성할 예정이다.</span>
-
 
 ## 시스템 요구사항
 <span style="color: #FF4848">도커로 구성할 예정</span>
