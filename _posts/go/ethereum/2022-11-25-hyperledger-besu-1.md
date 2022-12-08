@@ -13,19 +13,15 @@ render_with_liquid: false
 ---
 
 ## 시스템 아키텍처
-!["hyperledger besu system architecture"](/assets/img/blockchain/hyperledger_besu_architecture.png)
-
+!["hyperledger besu system architecture"](/assets/img/blockchain/hyperledger_besu_architecture.png)  
 
 ## 시스템 요구사항
-<span style="color: #FF4848">도커로 구성할 예정</span>
-
 **JVM Memory**
 * JVM 메모리 최소 4GB
 
 **OS**
 * 메모리 크기 6GB
-* 최소 20GB의 하드디스크
-
+* 최소 20GB의 하드디스크  
 
 ## 하이퍼레저 비수 기본 개념 간단하게 정리
 **하이퍼레저 비수란?**
