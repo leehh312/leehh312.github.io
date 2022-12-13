@@ -29,7 +29,7 @@ description: >-                        # used by seo meta and the atom feed
   개발자로서 새롭게 알게된 것이나, 중요한 개념이거나, 잊어버리고 있는 많은 것을 기록해 보려 합니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://leehh312.github.io"
+url: 'https://leehh312.github.io'
 
 github:
   username: leehh312             # change to your github username
