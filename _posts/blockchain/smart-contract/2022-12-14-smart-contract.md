@@ -83,8 +83,8 @@ Application, Contract 테스트 파일 디렉토리
 
 ## 간단한 스마트 컨트랙트 작성
 **마켓플레이스에서 솔리디티 플러그인 다운로드**
-> command+shift+x 단축키 눌러 Solidity 검색 후 다운로드
-!["solidity download"](/assets/img/blockchain/vscode-solidity.png)
+> command+shift+x 단축키 눌러 Solidity 검색 후 다운로드  
+!["solidity download"](/assets/img/blockchain/vscode-solidity.png)  
 
 contracts에서 파일 생성 후 작성
 ```solidity
