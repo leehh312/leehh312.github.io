@@ -189,3 +189,6 @@ truffle migirate --network hoya --to 1 -f 1 --reset
 ```
 ![배포 결과](/assets/img/blockchain/truffle_migirate.png)
 ![블록체인 결과](/assets/img/blockchain/truffle_bc_migirate.png)
+
+## 참고자료  
+[호야 블로그 트러플 프레임워크 샘플 저장소](https://github.com/leehh312/test-contract).  
