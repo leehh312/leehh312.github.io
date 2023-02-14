@@ -158,7 +158,7 @@ const provider = new HDWalletProvider(privateKeys, url);
 
 module.exports = {
   networks: {
-    hoya: {
+    heno: {
       provider: () => provider,
       network_id: "*",
       gasPrice: 0,
@@ -185,7 +185,7 @@ module.exports = {
 ```  
 ## 스마트 컨트랙트 배포
 ```bash
-truffle migirate --network hoya --to 1 -f 1 --reset
+truffle migirate --network heno --to 1 -f 1 --reset
 ```
 ![배포 결과](/assets/img/blockchain/truffle_migirate.png)
 ![블록체인 결과](/assets/img/blockchain/truffle_bc_migirate.png)

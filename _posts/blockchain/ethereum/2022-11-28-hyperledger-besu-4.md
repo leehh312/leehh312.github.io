@@ -25,7 +25,7 @@ docker cp {containerID}:/QBFT-Network ./
 
 **도커 이미지 업데이트**
 ```console
-docker stop {containerID} && docker commit {containerID} ms_peer:hoya
+docker stop {containerID} && docker commit {containerID} ms_peer:heno
 ```
 
 **도커 환경변수 설정**
@@ -34,34 +34,34 @@ vi .env
 ```
 ```bash
 # common settins
-HOYA_NODE_IMAGE="ms_peer:hoya"
-HOYA_COMMAND="/entrypoint.sh"
-HOYA_LOGGING="INFO"
-HOYA_BESU_COLOR_ENABLED=true
+HENO_NODE_IMAGE="ms_peer:heno"
+HENO_COMMAND="/entrypoint.sh"
+HENO_LOGGING="INFO"
+HENO_BESU_COLOR_ENABLED=true
 
 # node1 settings
-NODE1_HOYA_PEER_NAME="node1"
-NODE1_HOYA_NODE="Node-1"
-NODE1_HOYA_HTTP_PORT=8545
-NODE1_HOYA_P2P_PORT=30303
+NODE1_HENO_PEER_NAME="node1"
+NODE1_HENO_NODE="Node-1"
+NODE1_HENO_HTTP_PORT=8545
+NODE1_HENO_P2P_PORT=30303
 
 # node2 settings
-NODE2_HOYA_PEER_NAME="node2"
-NODE2_HOYA_NODE="Node-2"
-NODE2_HOYA_HTTP_PORT=8546
-NODE2_HOYA_P2P_PORT=30304
+NODE2_HENO_PEER_NAME="node2"
+NODE2_HENO_NODE="Node-2"
+NODE2_HENO_HTTP_PORT=8546
+NODE2_HENO_P2P_PORT=30304
 
 # node3 settings
-NODE3_HOYA_PEER_NAME="node3"
-NODE3_HOYA_NODE="Node-3"
-NODE3_HOYA_HTTP_PORT=8547
-NODE3_HOYA_P2P_PORT=30305
+NODE3_HENO_PEER_NAME="node3"
+NODE3_HENO_NODE="Node-3"
+NODE3_HENO_HTTP_PORT=8547
+NODE3_HENO_P2P_PORT=30305
 
 # node4 settings
-NODE4_HOYA_PEER_NAME="node4"
-NODE4_HOYA_NODE="Node-4"
-NODE4_HOYA_HTTP_PORT=8548
-NODE4_HOYA_P2P_PORT=30306
+NODE4_HENO_PEER_NAME="node4"
+NODE4_HENO_NODE="Node-4"
+NODE4_HENO_HTTP_PORT=8548
+NODE4_HENO_P2P_PORT=30306
 ```
 
 **docker-compose.yml 구성**
@@ -72,76 +72,76 @@ vi docker-compose.yml
 version: "3"
 services:
   node1:  
-    container_name: ${NODE1_HOYA_PEER_NAME}
-    image: ${HOYA_NODE_IMAGE}
+    container_name: ${NODE1_HENO_PEER_NAME}
+    image: ${HENO_NODE_IMAGE}
     environment:
-      HOYA_PEER_NAME: ${NODE1_HOYA_PEER_NAME}
-      HOYA_LOGGING: ${HOYA_LOGGING}
-      HOYA_BESU_COLOR_ENABLED: ${HOYA_BESU_COLOR_ENABLED}
-      HOYA_NODE: ${NODE1_HOYA_NODE}
-      HOYA_HTTP_PORT: ${NODE1_HOYA_HTTP_PORT}
-      HOYA_P2P_PORT: ${NODE1_HOYA_P2P_PORT}
-    entrypoint: ${HOYA_COMMAND}
+      HENO_PEER_NAME: ${NODE1_HENO_PEER_NAME}
+      HENO_LOGGING: ${HENO_LOGGING}
+      HENO_BESU_COLOR_ENABLED: ${HENO_BESU_COLOR_ENABLED}
+      HENO_NODE: ${NODE1_HENO_NODE}
+      HENO_HTTP_PORT: ${NODE1_HENO_HTTP_PORT}
+      HENO_P2P_PORT: ${NODE1_HENO_P2P_PORT}
+    entrypoint: ${HENO_COMMAND}
     ports: 
-      - "${NODE1_HOYA_HTTP_PORT}:${NODE1_HOYA_HTTP_PORT}"
+      - "${NODE1_HENO_HTTP_PORT}:${NODE1_HENO_HTTP_PORT}"
     networks: 
-      - hoya_net
-    volumes: ['./QBFT-Network/${NODE1_HOYA_NODE}/data:/QBFT-Network/${NODE1_HOYA_NODE}/data']
+      - heno_net
+    volumes: ['./QBFT-Network/${NODE1_HENO_NODE}/data:/QBFT-Network/${NODE1_HENO_NODE}/data']
     restart: always
   node2:  
-    container_name: ${NODE2_HOYA_PEER_NAME}
-    image: ${HOYA_NODE_IMAGE}
+    container_name: ${NODE2_HENO_PEER_NAME}
+    image: ${HENO_NODE_IMAGE}
     environment:
-      HOYA_PEER_NAME: ${NODE2_HOYA_PEER_NAME}
-      HOYA_LOGGING: ${HOYA_LOGGING}
-      HOYA_BESU_COLOR_ENABLED: ${HOYA_BESU_COLOR_ENABLED}
-      HOYA_NODE: ${NODE2_HOYA_NODE}
-      HOYA_HTTP_PORT: ${NODE2_HOYA_HTTP_PORT}
-      HOYA_P2P_PORT: ${NODE2_HOYA_P2P_PORT}
-    entrypoint: ${HOYA_COMMAND}
+      HENO_PEER_NAME: ${NODE2_HENO_PEER_NAME}
+      HENO_LOGGING: ${HENO_LOGGING}
+      HENO_BESU_COLOR_ENABLED: ${HENO_BESU_COLOR_ENABLED}
+      HENO_NODE: ${NODE2_HENO_NODE}
+      HENO_HTTP_PORT: ${NODE2_HENO_HTTP_PORT}
+      HENO_P2P_PORT: ${NODE2_HENO_P2P_PORT}
+    entrypoint: ${HENO_COMMAND}
     ports: 
-      - "${NODE2_HOYA_HTTP_PORT}:${NODE2_HOYA_HTTP_PORT}"
+      - "${NODE2_HENO_HTTP_PORT}:${NODE2_HENO_HTTP_PORT}"
     networks: 
-      - hoya_net
-    volumes: ['./QBFT-Network/${NODE1_HOYA_NODE}/data:/QBFT-Network/${NODE1_HOYA_NODE}/data']
+      - heno_net
+    volumes: ['./QBFT-Network/${NODE1_HENO_NODE}/data:/QBFT-Network/${NODE1_HENO_NODE}/data']
     restart: always
   node3:  
-    container_name: ${NODE3_HOYA_PEER_NAME}
-    image: ${HOYA_NODE_IMAGE}
+    container_name: ${NODE3_HENO_PEER_NAME}
+    image: ${HENO_NODE_IMAGE}
     environment:
-      HOYA_PEER_NAME: ${NODE3_HOYA_PEER_NAME}
-      HOYA_LOGGING: ${HOYA_LOGGING}
-      HOYA_BESU_COLOR_ENABLED: ${HOYA_BESU_COLOR_ENABLED}
-      HOYA_NODE: ${NODE3_HOYA_NODE}
-      HOYA_HTTP_PORT: ${NODE3_HOYA_HTTP_PORT}
-      HOYA_P2P_PORT: ${NODE3_HOYA_P2P_PORT}
-    entrypoint: ${HOYA_COMMAND}
+      HENO_PEER_NAME: ${NODE3_HENO_PEER_NAME}
+      HENO_LOGGING: ${HENO_LOGGING}
+      HENO_BESU_COLOR_ENABLED: ${HENO_BESU_COLOR_ENABLED}
+      HENO_NODE: ${NODE3_HENO_NODE}
+      HENO_HTTP_PORT: ${NODE3_HENO_HTTP_PORT}
+      HENO_P2P_PORT: ${NODE3_HENO_P2P_PORT}
+    entrypoint: ${HENO_COMMAND}
     ports: 
-      - "${NODE3_HOYA_HTTP_PORT}:${NODE3_HOYA_HTTP_PORT}"
+      - "${NODE3_HENO_HTTP_PORT}:${NODE3_HENO_HTTP_PORT}"
     networks: 
-      - hoya_net
-    volumes: ['./QBFT-Network/${NODE1_HOYA_NODE}/data:/QBFT-Network/${NODE1_HOYA_NODE}/data']
+      - heno_net
+    volumes: ['./QBFT-Network/${NODE1_HENO_NODE}/data:/QBFT-Network/${NODE1_HENO_NODE}/data']
     restart: always
   node4:  
-    container_name: ${NODE4_HOYA_PEER_NAME}
-    image: ${HOYA_NODE_IMAGE}
+    container_name: ${NODE4_HENO_PEER_NAME}
+    image: ${HENO_NODE_IMAGE}
     environment:
-      HOYA_PEER_NAME: ${NODE4_HOYA_PEER_NAME}
-      HOYA_LOGGING: ${HOYA_LOGGING}
-      HOYA_BESU_COLOR_ENABLED: ${HOYA_BESU_COLOR_ENABLED}
-      HOYA_NODE: ${NODE4_HOYA_NODE}
-      HOYA_HTTP_PORT: ${NODE4_HOYA_HTTP_PORT}
-      HOYA_P2P_PORT: ${NODE4_HOYA_P2P_PORT}
-    entrypoint: ${HOYA_COMMAND}
+      HENO_PEER_NAME: ${NODE4_HENO_PEER_NAME}
+      HENO_LOGGING: ${HENO_LOGGING}
+      HENO_BESU_COLOR_ENABLED: ${HENO_BESU_COLOR_ENABLED}
+      HENO_NODE: ${NODE4_HENO_NODE}
+      HENO_HTTP_PORT: ${NODE4_HENO_HTTP_PORT}
+      HENO_P2P_PORT: ${NODE4_HENO_P2P_PORT}
+    entrypoint: ${HENO_COMMAND}
     ports: 
-      - "${NODE4_HOYA_HTTP_PORT}:${NODE4_HOYA_HTTP_PORT}"
+      - "${NODE4_HENO_HTTP_PORT}:${NODE4_HENO_HTTP_PORT}"
     networks: 
-      - hoya_net
-    volumes: ['./QBFT-Network/${NODE1_HOYA_NODE}/data:/QBFT-Network/${NODE1_HOYA_NODE}/data']
+      - heno_net
+    volumes: ['./QBFT-Network/${NODE1_HENO_NODE}/data:/QBFT-Network/${NODE1_HENO_NODE}/data']
     restart: always
 
 networks: 
-  hoya_net: 
+  heno_net: 
     driver: bridge
 ```
 

@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Hoya Blog                          # the main title
+title: Heno Blog                          # the main title
 
 tagline: 안녕하세요. 경험하고 알고 있는 것들을 기록할 예정입니다.
 
@@ -40,7 +40,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Hoya
+  name: Heno
   email: leehh312@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
