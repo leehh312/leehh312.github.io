@@ -55,20 +55,20 @@ besu --data-path=/QBFT-Network/Node-2/data --genesis-file=/QBFT-Network/genesis.
 mkdir core && cd core && vi node-core
 ```
 ```bash
-export BESU_IDENTITY=${HENO_PEER_NAME}
+export BESU_IDENTITY=${HOYA_PEER_NAME}
 
 export BESU_NETWORK=MAINNET
 
 export BESU_NETWORK_ID=20221026
 
-export BESU_LOGGING=${HENO_LOGGING}
+export BESU_LOGGING=${HOYA_LOGGING}
 
-export BESU_COLOR_ENABLED=${HENO_BESU_COLOR_ENABLED}
+export BESU_COLOR_ENABLED=${HOYA_BESU_COLOR_ENABLED}
 
 export BESU_SYNC_MODE=FULL
 
 # 노드1 Node-1, 노드2 Node-2, 노드3 Node-3, 노드4 Node-4 각자 경로에 맞게 설정
-export BESU_DATA_PATH=/QBFT-Network/${HENO_NODE}/data
+export BESU_DATA_PATH=/QBFT-Network/${HOYA_NODE}/data
 
 export BESU_GENESIS_FILE=/QBFT-Network/genesis.json
 
@@ -81,7 +81,7 @@ export BESU_RPC_HTTP_ENABLED=true
 export BESU_RPC_HTTP_HOST=0.0.0.0
 
 # 노드1 8545, 노드2 8546, 노드3 8547, 노드4 8548
-export BESU_RPC_HTTP_PORT=${HENO_HTTP_PORT}
+export BESU_RPC_HTTP_PORT=${HOYA_HTTP_PORT}
 
 export BESU_RPC_HTTP_API=ETH,QBFT,NET,WEB3
 
@@ -98,7 +98,7 @@ export BESU_P2P_ENABLED=true
 export BESU_P2P_HOST=0.0.0.0
 
 # 노드1 30303, 노드2 30304, 노드3 30305, 노드4 30306
-export BESU_P2P_PORT=${HENO_P2P_PORT}
+export BESU_P2P_PORT=${HOYA_P2P_PORT}
 
 export BESU_P2P_INTERFACE=0.0.0.0
 

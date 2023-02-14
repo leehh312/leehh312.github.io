@@ -45,7 +45,7 @@ docker pull ubuntu
 ```
 **도커 이미지명 및 태그 변경**
 ```console
-docker image tag ubuntu:latest ms_peer:heno
+docker image tag ubuntu:latest ms_peer:hoya
 ```
 **기존 우분투 이미지 삭제 및 결과 확인**
 ```console
