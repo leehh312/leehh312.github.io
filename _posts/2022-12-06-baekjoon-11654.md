@@ -8,7 +8,7 @@ toc_sticky: true
 toc_label: 목차
 math: true
 mermaid: true
-pin: true
+pin: false
 render_with_liquid: false
 ---
 
