@@ -5,4 +5,12 @@ permalink: /robots.txt
 User-agent: *
 Allow: /
 
-Sitemap: {{ '/sitemap.xml' | absolute_url }} 
+# 페이지네이션 페이지 차단
+Disallow: /page2/
+Disallow: /page3/
+Disallow: /page*/
+
+# 빈 카테고리 페이지 차단
+Disallow: /categories/golang/
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
