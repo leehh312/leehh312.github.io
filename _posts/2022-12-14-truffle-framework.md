@@ -1,7 +1,7 @@
 ---
 title: 트러플 이용하여 스마트 컨트랙트 배포하기
 author: cotes
-categories: [blockchain, smart-contract]
+categories: [blockchain, smartcontract]
 tags: [blockchain, ethereum, smartcontract]
 toc: true
 toc_sticky: true
