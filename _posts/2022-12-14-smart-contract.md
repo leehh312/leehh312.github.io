@@ -14,9 +14,20 @@ render_with_liquid: false
 
 ## 트러플 개념 및 설치
 
-**트러플이란?**  
-이더리움 기반 디앱을 쉽게 개발할 수 있도록 도와주는 블록체인 프레임워크이다.
-스마트 컨트랙트 컴파일, 배포, 관리, 테스트 쉽게할 수 있으며 트러플은 이더리움 기반 디앱 개발에 가장 많이 사용되는 프레임워크 중 하나이다.  
+**트러플(Truffle)이란?**  
+트러플(Truffle)은 이더리움(Ethereum) 기반의 탈중앙화 애플리케이션(DApp) 개발 과정을 획기적으로 간소화하고 자동화해주는 세계에서 가장 널리 사용되는 블록체인 개발 프레임워크입니다.
+
+웹 개발에 비유하자면, '이더리움 세계의 루비 온 레일즈(Ruby on Rails)' 나 '스프링 부트(Spring Boot)' 와 같은 역할을 합니다. 복잡한 설정 없이도 스마트 컨트랙트의 개발, 테스트, 배포에 이르는 전체 라이프사이클을 효율적으로 관리할 수 있는 강력한 도구 모음을 제공합니다.
+
+**트러플의 핵심 역할**
+* 스마트 컨트랙트 관리 (Smart Contract Management)
+  * 솔리디티(Solidity)로 작성된 코드를 손쉽게 컴파일하고, 다양한 블록체인 네트워크에 배포하며, 컨트랙트의 버전과 상태를 관리합니다.
+* 자동화된 테스트 (Automated Testing)
+  * 단위 테스트(Unit Test)와 통합 테스트(Integration Test)를 위한 강력한 프레임워크를 내장하고 있어, 컨트랙트의 안정성과 신뢰도를 높일 수 있습니다.
+* 편리한 네트워크 관리 (Convenient Network Management)
+  * 로컬 개발 환경(Ganache), 이더리움 테스트넷(Sepolia 등), 그리고 실제 운영 환경인 메인넷(Mainnet)까지, 복잡한 설정 없이 원하는 네트워크에 스마트 컨트랙트를 손쉽게 배포할 수 있습니다.
+* 강력한 개발 생태계 (Powerful Development Ecosystem)
+  * 트러플은 Ganache(개인용 로컬 블록체인), Drizzle(프론트엔드 라이브러리) 등과 함께 '트러플 스위트(Truffle Suite)' 를 구성하여, 디앱 개발에 필요한 거의 모든 환경을 통합적으로 제공합니다.
 
 **요구사항**  
 * Node.js v14 - v18
@@ -125,7 +136,7 @@ contract TestStorage{
 
 ## 스크립트 배포 파일 작성  
 migrations에서 1_파일명.js 작성
-필자는 1_deploy_contract.js이렇게 작성하였음.
+저는 파일은명 `1_deploy_contract.js` 이렇게 작성하였음.
 ```js
 // require("스마트 컨트랙트명 기입")
 const TestStorage = artifacts.require("TestStorage");
@@ -145,7 +156,7 @@ module.exports = async function (deployer) {
 npm install @truffle/hdwallet-provider
 ```
 
-필자가 올린 [하이퍼레저 비수(이더리움 기반) 구축](https://leehh312.github.io/posts/hyperledger-besu-1/)을 통해서 스마트 컨트랙트 배포 테스트해볼 예정이다.
+이전에 제가 올린 [하이퍼레저 비수(이더리움 기반) 구축](https://leehh312.github.io/posts/hyperledger-besu-1/)을 이어서, 스마트 컨트랙트 배포를 테스트해볼 예정입니다.
 ```js
 // truffle-config.js
 const HDWalletProvider = require('@truffle/hdwallet-provider');
