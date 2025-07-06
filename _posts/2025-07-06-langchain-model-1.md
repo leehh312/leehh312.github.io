@@ -1,5 +1,5 @@
 ---
-title: "LangChain Model 기초 - Chat Models & 기본 설정"
+title: "LangChain 학습 노트 #4 - Chat Models & 기본 설정"
 author: cotes
 categories: [ai, llm]
 tags: [langchain, llm, chatmodel, openai, anthropic, ai]

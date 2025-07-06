@@ -1,5 +1,5 @@
 ---
-title: "LangChain Model 최적화 - Cache, Serialization & Token Usage"
+title: "LangChain 학습 노트 #5 - Model Cache, Serialization & Token Usage"
 author: cotes
 categories: [ai, llm]
 tags: [langchain, cache, optimization, token, serialization, performance]
